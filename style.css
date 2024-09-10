@@ -20,3 +20,19 @@ html,body{
     scroll-behavior: smooth;
 }
 /* reset code ends here */
+/* header starts here */
+.container{
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    background-color: var(--purple300);
+}
+/* header ends here */
