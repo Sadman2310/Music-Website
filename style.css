@@ -24,15 +24,71 @@ html,body{
 .container{
     max-width: var(--max-width);
     margin: 0 auto;
+    padding: 20px 0;
 }
 ul{
     list-style-type: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 a{
     text-decoration: none;
     color: white;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3S ease-in-out;
+}
+A:hover{
+    border-bottom: 2px solid;
+    transition: all 0.3S ease-in-out;
+
 }
 header{
     background-color: var(--purple300);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.logo{
+    font-size: 32px;
+    font-weight: 600;
+
 }
 /* header ends here */
+/* main starts here */
+.hero-section{
+    background-image: url(img/hero_image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+
+}
+.hero__container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    padding: 50px;
+}
+.hero-section h1{
+    font-size: 96px;
+}
+.hero-section h3{
+    font-size: 32px;
+}
+/* main ends here */
